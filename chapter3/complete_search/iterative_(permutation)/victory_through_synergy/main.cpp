@@ -19,7 +19,7 @@ int main() {
 		cin >> name[i] >> nation[i] >> league[i] >> team[i];
 	int synergy[n][n];
 	for (int i = 0; i < n; i++)
-		for (int j = 0; j < n; j++)
+		for (int j = i+1; j < n; j++)
 			if (nation[i] == nation[j] && team[i] == team[j])
 				synergy[i][j] = synergy[j][i] = 3;
 			else if (nation[i] == nation[j] && league[i] == league[j])
