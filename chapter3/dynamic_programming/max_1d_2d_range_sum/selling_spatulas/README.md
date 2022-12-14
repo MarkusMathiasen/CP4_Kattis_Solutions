@@ -1,0 +1,2 @@
+`main.cpp` uses `long double` to have okay precision while `main2.cpp` uses `long long` to have exact precision. However `main2.cpp` gets WA while `main.cpp` gets `AC`.
+I think it is an error in the solution of the judge.
