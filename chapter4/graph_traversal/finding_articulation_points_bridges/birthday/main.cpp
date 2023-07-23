@@ -19,9 +19,9 @@ void dfs(int v) {
 		if (!num[u]) {
 			p[u] = v;
 			dfs(u);
+			res |= low[u] > num[v];
 		}
 		low[v] = min(low[v], low[u]);
-		res |= low[u] > num[v];
 	}
 }
 
